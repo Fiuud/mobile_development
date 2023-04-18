@@ -24,15 +24,9 @@ public class Cottage
 
     @Override
     public String toString() {
-        String result = "Owner: ";
-        if (super.getOwner() != null)
-            result += getOwner();
-        else
-            result += "n/a";
-        if (super.hasPool())
-            result += "; has a pool";
-        if (this.calcLotArea() > this.calcBuildingArea())
-            result += "; has a big open space";
+        String result = "";
+
+        result += super.toString();
         if (this.hasSecondFloor())
             result += "; is a two story cottage";
         else
